@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intelligent Infrastructure Management System</title>
+</head>
+<body>
+    <h1>Infrastructure Status</h1>
+    <div id="infrastructure-list"></div>
+
+    <h1>Inspect Infrastructure</h1>
+    <form id="inspect-infrastructure-form">
+        <label for="infrastructure">Select Infrastructure:</label>
+        <select id="infrastructure" name="infrastructure">
+            <!-- Infrastructure options will be populated using JavaScript -->
+        </select>
+        <br>
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+            <option value="Good">Good</option>
+            <option value="Fair">Fair</option>
+            <option value="Poor">Poor</option>
+        </select>
+        <br>
+        <label for="inspection-date">Inspection Date:</label>
+        <input type="date" id="inspection-date" name="inspection-date">
+        <br>
+        <input type="submit" value="Submit Inspection">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
